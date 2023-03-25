@@ -22,7 +22,7 @@ export default function App() {
           <NotistackProvider>
             <MotionLazyContainer>
               <ProgressBarStyle />
-              <Settings />
+              {/*<Settings />*/}
               <ScrollToTop />
               <TokenProvider>
                 <Router />
