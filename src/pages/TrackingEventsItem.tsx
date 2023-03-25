@@ -70,7 +70,7 @@ export default function TrackingEventsItem({
       `${item.location?.toLocaleUpperCase() ?? 'N/A'}, ${
         item.state?.toLocaleUpperCase() ?? 'N/A'
       }, ${item.city?.toLocaleUpperCase() ?? 'N/A'},`,
-    [item.city, item.state]
+    [item.city, item.state, item.location]
   );
 
   const country = useMemo(() => item.country.name.toLocaleUpperCase(), [item.country.name]);
