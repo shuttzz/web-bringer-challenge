@@ -63,9 +63,13 @@ export default function TrackingEventsItem({
     }
   };
 
+  console.log('COMO É O ITEM', item);
+
   const location = useMemo(
     () =>
-      `${item.state?.toLocaleUpperCase() ?? 'N/A'}, ${item.city?.toLocaleUpperCase() ?? 'N/A'},`,
+      `${item.location?.toLocaleUpperCase() ?? 'N/A'}, ${
+        item.state?.toLocaleUpperCase() ?? 'N/A'
+      }, ${item.city?.toLocaleUpperCase() ?? 'N/A'},`,
     [item.city, item.state]
   );
 

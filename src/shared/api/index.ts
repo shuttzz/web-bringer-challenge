@@ -24,6 +24,8 @@ export type ParcelTrackingItem = {
   tracking_code_vendor?: TrackingCodeVendor;
 
   tracking_code?: TrackingCode;
+
+  location: string;
 };
 
 export type Country = {
