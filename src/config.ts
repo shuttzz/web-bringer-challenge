@@ -30,9 +30,9 @@ export const ICON = {
 // ----------------------------------------------------------------------
 
 export const defaultSettings: SettingsValueProps = {
-  themeMode: 'light',
+  themeMode: 'dark',
   themeDirection: 'ltr',
-  themeColorPresets: 'blue',
+  themeColorPresets: 'orange',
   themeLayout: 'horizontal',
   themeStretch: false,
 };
