@@ -1,13 +1,5 @@
 // @mui
-import {
-  Alert,
-  Container,
-  IconButton,
-  InputAdornment,
-  Stack,
-  TextField,
-  Typography,
-} from '@mui/material';
+import { Alert, Container, IconButton, InputAdornment, Stack, TextField } from '@mui/material';
 import Page from '../components/Page';
 import { styled } from '@mui/material/styles';
 import { useEffect, useState } from 'react';
@@ -77,8 +69,7 @@ export default function Auth() {
   } = methods;
 
   const onSubmit = async ({ email, password }: FormValuesProps) => {
-    const response = await useAuthJWT.mutate({ email, password });
-    console.log('RESPONSE NA TELA DE AUTH', useAuthJWT.data);
+    await useAuthJWT.mutate({ email, password });
   };
 
   return (
